@@ -1,0 +1,23 @@
+package com.devsuperior.myfirstproject.resources;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+
+@RestController
+@RequestMapping(value = "/categories")
+public class CategoryResource {
+
+	@GetMapping
+	public ResponseEntity<...> findAll(){
+		
+		...
+		return ResponseEntity.ok().body(...);
+	}
+	
+	@GetMapping(value = "/id")
+	public ResponseEntity<...> findById(@PathVariable Long id){
+		
+		...
+		return ResponseEntity.ok().body(...);
+	}
+}
