@@ -7,7 +7,7 @@ import com.devsuperior.myfirstproject.entities.Category;
 
 
 @Repository
-public interface CategoryRepository extends JpaRepository<Category, Long>{
+public class CategoryRepository extends JpaRepository<Category, Long>{
 	
 	/*
 	 *  Utilizada para testes manuais

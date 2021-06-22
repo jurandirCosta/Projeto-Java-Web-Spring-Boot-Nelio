@@ -1,16 +1,14 @@
 package com.devsuperior.myfirstproject.repositories;
 
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import com.devsuperior.myfirstproject.entities.Category;
 
-
+/*@Component*/
 @Repository
-public interface CategoryRepository extends JpaRepository<Category, Long>{
+public class CategoryRepository extends JpaRepository<Category, Long>{
 	
-	/*
-	 *  Utilizada para testes manuais
+	/* Utilizada para testes manuais
 	 * private Map<Long, Category> map = new HashMap<>();
 	 * 
 	 * public void save(Category obj) { map.put(obj.getId(), obj); }

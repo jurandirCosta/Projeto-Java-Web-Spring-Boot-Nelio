@@ -1,16 +1,14 @@
 package com.devsuperior.myfirstproject.repositories;
 
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import com.devsuperior.myfirstproject.entities.Product;
 
-
+/*@Component*/
 @Repository
-public interface ProductRepository extends JpaRepository<Product, Long> {
+public class ProductRepository extends JpaRepository<Product, Long> {
 	
-	/* 
-	 * Utilizado para teste manuais
+	/* Utilizado para teste manuais
 	 * private Map<Long, Product> map = new HashMap<>();
 	 * 
 	 * public void save(Product obj) { map.put(obj.getId(), obj); }
