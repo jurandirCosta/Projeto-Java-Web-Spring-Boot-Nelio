@@ -44,7 +44,7 @@ public class MyfirstprojectApplication implements CommandLineRunner{
 		productRepository.save(p1);
 		productRepository.save(p2);
 		productRepository.save(p3);
-		productRepository.save(p4);
+		productRepository.save(p41);
 	}
 
 }
